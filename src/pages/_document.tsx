@@ -9,9 +9,9 @@ export default function Document() {
         <meta name="theme-color" content="#0066cc" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="description" content="Your application description" />
-        <meta name="keywords" content="your,keywords,here" />
-        <meta name="author" content="Your Name" />
+        <meta name="description" content="Nomad.AI - Your intelligent travel companion" />
+        <meta name="keywords" content="travel,ai,nomad,tourism,trip planning" />
+        <meta name="author" content="Nomad.AI Team" />
       </Head>
       <body className="antialiased">
         <Main />

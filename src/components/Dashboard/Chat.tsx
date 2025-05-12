@@ -131,7 +131,7 @@ const Chat = () => {
         <div className="mt-6 flex items-center justify-end">
           <button className="flex cursor-pointer items-center gap-1 text-[#ff5e00] transition-colors hover:text-[#e55500]">
             <Icon icon="mdi:help-circle-outline" className="text-[18px]" />
-            <span>What can I ask Midtrip?</span>
+            <span>What can I ask Nomad.AI?</span>
           </button>
         </div>
       </div>

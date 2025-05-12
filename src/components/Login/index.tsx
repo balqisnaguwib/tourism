@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 
-// Buat login page kat sini
-
 // Others
 import { login } from '@/stores/auth';
 
@@ -45,7 +43,7 @@ const Login = () => {
                 <polygon points="4,4 20,12 4,20" fill="white" />
               </svg>
             </div>
-            <span className="text-3xl font-bold text-blue-800">AI Tourism</span>
+            <span className="text-3xl font-bold text-blue-800">Nomad.AI</span>
           </div>
         </div>
         {/* Form Section */}

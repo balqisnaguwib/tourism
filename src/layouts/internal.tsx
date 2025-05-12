@@ -70,7 +70,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
       <div className="mb-4 flex flex-col gap-4">
         <div className="flex gap-1 rotate-270 my-8">
-          <p className="font-bold text-lg">mindtrip.</p>
+          <p className="font-bold text-lg">Nomad.AI</p>
         </div>
         <Link
           href="/profile"
