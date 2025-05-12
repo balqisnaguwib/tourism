@@ -42,7 +42,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         className="flex items-center justify-center h-[45px]"
         onClick={() => push("/dashboard")}
       >
-        <Icon icon="ri:gemini-fill" className={twMerge("text-[25px]")} />
+        <Icon icon="ri:gemini-fill" className={twMerge("text-[25px] text-[#ff5e00]")} />
       </button>
       <div className="flex flex-grow flex-col gap-4 py-4">
         {TABS?.map((o, i) => (
@@ -51,12 +51,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             href={o?.path}
             className={twMerge(
               "group relative flex justify-center p-2",
-              asPath === o?.path && "border-r-4 border-black"
+              asPath === o?.path && "border-r-4 border-[#0066cc]"
             )}
           >
             <Icon
               icon={asPath !== o?.path ? o?.icon : o?.icon_selected}
-              className={twMerge("text-[20px]")}
+              className={twMerge(
+                "text-[20px]",
+                asPath === o?.path ? "text-[#0066cc]" : "text-[#ff5e00]"
+              )}
             />
             <p
               className={twMerge(
@@ -70,13 +73,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
       <div className="mb-4 flex flex-col gap-4">
         <div className="flex gap-1 rotate-270 my-8">
-          <p className="font-bold text-lg">Nomad.AI</p>
+          <p className="font-bold text-lg text-[#ff5e00]">Nomad.AI</p>
         </div>
         <Link
           href="/profile"
           className={twMerge("group relative flex justify-center")}
         >
-          <Icon icon="mdi:user" className={twMerge("text-[20px]")} />
+          <Icon icon="mdi:user" className={twMerge(
+            "text-[20px]",
+            asPath === "/profile" ? "text-[#0066cc]" : "text-[#ff5e00]"
+          )} />
           <div
             className={twMerge(
               "absolute left-[45px] top-0 z-10 hidden whitespace-nowrap bg-white px-4 py-2 text-xs font-bold group-hover:block"
@@ -92,7 +98,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         >
           <Icon
             icon="material-symbols:logout"
-            className={twMerge("text-[20px]")}
+            className={twMerge("text-[20px] text-[#ff5e00]")}
           />
           <div
             className={twMerge(
@@ -111,7 +117,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div className="relative h-screen">
         <div
           className={twMerge(
-            "absolute left-0 top-0 hidden border-r border-gray-300 h-full flex-col justify-between md:flex w-[45px] bg-white text-primary"
+            "absolute left-0 top-0 hidden border-r border-gray-300 h-full flex-col justify-between md:flex w-[45px] bg-white"
           )}
         >
           {sidePanels}
@@ -122,10 +128,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           )}
         >
           <div className="flex items-center justify-between gap-2 bg-white p-2">
-            <Icon
+            {/* <Icon
               icon="ci:hamburger-lg"
-              className={twMerge("text-[20px] text-white")}
-            />
+              className={twMerge("text-[20px] text-[#0066cc]")}
+            /> */}
           </div>
           <div className="flex-grow">
             <div className="h-full w-full flex flex-col">{children}</div>

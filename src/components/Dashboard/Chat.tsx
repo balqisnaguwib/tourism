@@ -94,7 +94,7 @@ const Chat = () => {
     <div className="flex h-full flex-col justify-end px-6 py-16">
       <div className="flex flex-grow flex-col justify-between py-2">
         <div className="flex flex-col gap-4 overflow-y-auto">
-          <p className="bg-gradient-to-r from-black to-gray-600 bg-clip-text text-3xl font-bold text-transparent">
+          <p className="bg-gradient-to-r from-[#0066cc] to-[#4d94ff] bg-clip-text text-3xl font-bold text-transparent">
             Where to today?
           </p>
           
@@ -106,7 +106,7 @@ const Chat = () => {
                 className={`flex items-start gap-3 rounded-lg p-4 ${
                   message.role === 'assistant' 
                     ? 'border-l-4 border-[#ff5e00] bg-gray-50' 
-                    : 'border-l-4 border-blue-600 bg-blue-50 ml-auto max-w-[90%]'
+                    : 'border-l-4 border-[#0066cc] bg-blue-50 ml-auto max-w-[90%]'
                 }`}
               >
                 {message.role === 'assistant' && (
@@ -118,7 +118,7 @@ const Chat = () => {
                 <p className="leading-relaxed text-gray-700">{message.content}</p>
                 
                 {message.role === 'user' && (
-                  <div className="flex-shrink-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 p-2 ml-2">
+                  <div className="flex-shrink-0 rounded-full bg-gradient-to-r from-[#0066cc] to-[#4d94ff] p-2 ml-2">
                     <Icon icon="mdi:account" className="text-[22px] text-white" />
                   </div>
                 )}

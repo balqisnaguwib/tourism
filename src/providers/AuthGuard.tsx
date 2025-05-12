@@ -20,7 +20,7 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
   const { isInitialized, isAuthenticated } = useSelector((state: any) => state.auth);
 
   // if (!isInitialized) {
-  //   return <CircularProgress />;
+  //   return <CircularProgress sx={{ color: '#0066cc' }} />;
   // }
 
   if (!isAuthenticated) {

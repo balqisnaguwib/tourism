@@ -36,7 +36,7 @@ const Explore = () => {
           <button
             type="button"
             className="flex cursor-pointer items-center gap-1 rounded-full border border-gray-300 px-4 py-1.5 text-sm font-medium transition-colors hover:bg-gray-50"
-          >
+          > 
             <Icon icon="mdi:compass" className="text-gray-600" />
             Explore
           </button>

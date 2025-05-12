@@ -32,7 +32,7 @@ const Login = () => {
         {/* Logo Section */}
         <div className="mb-8 flex flex-col items-center">
           <div className="mb-1 flex items-center">
-            <div className="mr-2 flex h-12 w-12 items-center justify-center rounded bg-orange-600">
+            <div className="mr-2 flex h-12 w-12 items-center justify-center rounded bg-[#ff5e00]">
               <svg
                 width="28"
                 height="28"
@@ -43,7 +43,7 @@ const Login = () => {
                 <polygon points="4,4 20,12 4,20" fill="white" />
               </svg>
             </div>
-            <span className="text-3xl font-bold text-blue-800">Nomad.AI</span>
+            <span className="text-3xl font-bold text-[#0066cc]">Nomad.AI</span>
           </div>
         </div>
         {/* Form Section */}
@@ -65,7 +65,7 @@ const Login = () => {
             <input
               type="text"
               placeholder="Username"
-              className="w-full rounded border border-gray-200 py-2 pr-4 pl-10 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full rounded border border-gray-200 py-2 pr-4 pl-10 focus:ring-2 focus:ring-[#0066cc] focus:outline-none"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -87,7 +87,7 @@ const Login = () => {
             <input
               type="password"
               placeholder="Password"
-              className="w-full rounded border border-gray-200 py-2 pr-4 pl-10 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full rounded border border-gray-200 py-2 pr-4 pl-10 focus:ring-2 focus:ring-[#0066cc] focus:outline-none"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -95,7 +95,7 @@ const Login = () => {
           {error && <div className="text-center text-sm text-red-500">{error}</div>}
           <button
             type="submit"
-            className="mt-4 flex w-full items-center justify-center gap-2 rounded bg-blue-700 py-2 font-semibold text-white transition hover:bg-blue-800"
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded bg-[#0066cc] py-2 font-semibold text-white transition hover:bg-blue-700"
           >
             SIGN IN
             <span className="ml-2">
